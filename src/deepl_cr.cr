@@ -10,7 +10,7 @@ module Deepl
       setting api_key : String
     end
 
-    def translate(value : String, from : String, to : String)
+    def self.translate(value : String, from : String, to : String)
       Deepl::Request.new(
         api_key: settings.api_key,
         request_payload: [{
@@ -23,7 +23,7 @@ module Deepl
           "target_lang", to,
         },
         ]
-      )
+      ).dispatch
     end
   end
 end

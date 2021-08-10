@@ -24,14 +24,13 @@ Deepl.configure do |settings|
 end
 
 Habitat.raise_if_missing_settings!
+
+Deepl::Dispatcher.translate("key to translate", "from => EN", "to => DE")
 ```
 
-TODO: Write usage instructions here
+## Development
 
-
-TODO: Write development instructions here
-
-1. Fork it (<https://github.com/your-github-user/deepl_cr/fork>)
+1. Fork it (<https://github.com/Liberatys/deepl_cr/fork>)
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
