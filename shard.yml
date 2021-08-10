@@ -6,4 +6,8 @@ authors:
 
 crystal: 1.1.1
 
+dependencies:
+  habitat:
+    github: luckyframework/habitat
+
 license: MIT
