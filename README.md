@@ -1,6 +1,6 @@
 # deepl_cr
 
-TODO: Write a description here
+A shard for translations with deepl
 
 ## Installation
 
@@ -9,7 +9,7 @@ TODO: Write a description here
    ```yaml
    dependencies:
      deepl_cr:
-       github: your-github-user/deepl_cr
+       github: Liberatys/deepl_cr
    ```
 
 2. Run `shards install`
@@ -18,15 +18,18 @@ TODO: Write a description here
 
 ```crystal
 require "deepl_cr"
+
+Deepl.configure do |settings|
+   settings.api_key = ENV["DEEPL_API_KEY"]
+end
+
+Habitat.raise_if_missing_settings!
 ```
 
 TODO: Write usage instructions here
 
-## Development
 
 TODO: Write development instructions here
-
-## Contributing
 
 1. Fork it (<https://github.com/your-github-user/deepl_cr/fork>)
 2. Create your feature branch (`git checkout -b my-new-feature`)
@@ -36,4 +39,4 @@ TODO: Write development instructions here
 
 ## Contributors
 
-- [Liberatys](https://github.com/your-github-user) - creator and maintainer
+- [Liberatys](https://github.com/Liberatys) - creator and maintainer
