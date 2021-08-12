@@ -19,13 +19,13 @@ A shard for translations with deepl
 ```crystal
 require "deepl_cr"
 
-Deepl.configure do |settings|
-   settings.api_key = ENV["DEEPL_API_KEY"]
+Deepl::Dispatcher.configure do |settings|
+  settings.api_key = ENV["DEEPL_API_KEY"]
 end
 
 Habitat.raise_if_missing_settings!
 
-Deepl::Dispatcher.translate("key to translate", "from => EN", "to => DE")
+Deepl::Dispatcher.translate("key to translate", from: "EN", to: "DE")
 ```
 
 ## Development
