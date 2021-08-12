@@ -1,5 +1,5 @@
-require "./request.cr"
-require "./response.cr"
+require "./request"
+require "./response"
 require "habitat"
 
 module Deepl
@@ -13,16 +13,11 @@ module Deepl
     def self.translate(value : String, from : String, to : String)
       Deepl::Request.new(
         api_key: settings.api_key,
-        request_payload: [{
-          "text", value,
-        },
-        {
-          "source_lang", from,
-        },
-        {
-          "target_lang", to,
-        },
-        ]
+        request_payload: {
+          "text"        => value,
+          "source_lang" => from,
+          "target_lang" => to,
+        }
       ).dispatch
     end
   end
