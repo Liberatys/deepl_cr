@@ -36,6 +36,11 @@ Deepl::Dispatcher.translate("key to translate", from: "EN", to: "DE")
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
 
+## Special thanks
+
+- [Crest](https://github.com/mamantoha/crest) - HTTP and Rest client for Crystal
+
 ## Contributors
 
 - [Liberatys](https://github.com/Liberatys) - creator and maintainer
+- [Mamantoha](https://github.com/mamantoha) - contributor
