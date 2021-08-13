@@ -12,4 +12,8 @@ dependencies:
   crest:
     github: mamantoha/crest
 
+development_dependencies:
+  webmock:
+    github: manastech/webmock.cr
+
 license: MIT
